@@ -1,0 +1,340 @@
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Css variables */
+:root {
+  --navbar-height: 75px;
+  --b-margin: 5%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  /* background: linear-gradient(#070302,#07030200) no-repeat  center center/cover; */
+  background: #070302 no-repeat center center/cover;
+  color: #ffe2d3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: var(--navbar-height);
+}
+/* #navbar::before {
+  content: "";
+  background: #070302 no-repeat  center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  z-index: -1;
+} */
+
+/* Navigation Menu */
+#navbar ul {
+  display: flex;
+  position: absolute;
+  left: calc(var(--b-margin) - 8px);
+}
+#navbar ul li {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+#navbar ul li a {
+  color: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.item > a:hover {
+  font-size: 1rem;
+  color: #ffe2d3;
+  font-weight: 600;
+}
+
+/* Navigation Logo */
+#logo,
+.head-2 {
+  /* text-align: center; */
+  font-family: "Rancho", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 49.5px;
+  line-height: 60.3px;
+}
+#logo {
+  width: max-content;
+  margin: auto;
+}
+
+/* Navigation button */
+#btn {
+
+  position: absolute;
+  right: var(--b-margin);
+}
+
+/* Hero Section */
+#home {
+  /* position: absolute;
+  top: 75px; */
+  padding: 0 var(--b-margin);
+  height: 600px;
+  margin: 0;
+  color: #ffe2d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#home::before {
+  content: "";
+  background: url("../images/bg-1.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: -2;
+  opacity: 98%;
+}
+#home > h1 {
+  /* position: relative;
+  top: 75px; */
+  /* width: 636px;
+  height: 248px; */
+  font-weight: lighter;
+  font-size: 70px;
+  line-height: 80px;
+  width: 42%;
+  font-family: "Rancho", cursive;
+}
+#homebtn {
+  margin: 20px 0 0 0;
+  font-family: "Rancho", cursive;
+  border-radius: 8px;
+  font-size: 27px;
+  padding: 4px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: black;
+  border: 3px solid #ffe2d3;
+  background-color: #ffe2d3;
+  box-shadow: 8px 8px 10px black;
+}
+#homebtn:hover {
+  background-color: transparent;
+  color: #ffe2d3;
+}
+
+/* Utility Classes */
+.p-primary {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  width: 42%;
+  margin: 40px 0 0 0;
+}
+.txt-shadow {
+  text-shadow: 5px 2px 5px black, 5px 2px 5px black, 5px 2px 5px black;
+}
+
+.btn {
+  text-decoration: none;
+  font-family: "Rancho", cursive;
+  border-radius: 8px;
+  font-size: 25px;
+  padding: 4px 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: black;
+  border: 3px solid #ffe2d3;
+  background-color: #ffe2d3;
+}
+.btn:hover {
+  /* border: 3px solid blue; */
+  background-color: transparent;
+  color: #ffe2d3;
+}
+hr {
+  color: #ffe2d3;
+}
+
+/* Features Section */
+#features {
+  gap: 10px;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--b-margin);
+}
+#features::before {
+  content: "";
+  background: url("../images/bg-2.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 675px;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  z-index: -2;
+  opacity: 100%;
+  filter: blur(2px);
+}
+.card {
+  /* border: 2px solid blue; */
+  width: 250px;
+  color: #ffe2d3;
+}
+.icon-1 {
+  width: 70px;
+  padding: 3px 0px;
+  height: 70px;
+  filter: invert(98%) sepia(3%) saturate(4093%) hue-rotate(302deg)
+    brightness(94%) contrast(117%);
+}
+.head-3 {
+  font-size: 32px;
+  font-family: "Rancho", cursive;
+  font-weight: lighter;
+  padding: 3px 0px;
+}
+.para {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  /* width: 42%; */
+  padding: 3px 0px;
+}
+
+/* Shop */
+#shop {
+  height: 720px;
+  padding: 70px 0px;
+  background: url("../images/bg-3.jpg") no-repeat center center/cover;
+}
+#shop > h2,
+#shop > p {
+  text-align: center;
+  text-shadow: 7px 6px 7px #3c3c3c;
+}
+/* #shop::before {
+  content: "";
+  background: url("../images/bg-3.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 1026px;
+  left: 0;
+  width: 100%;
+  height: 720px;
+  z-index: -1;
+  opacity: 1;
+} */
+.shop {
+  display: flex;
+  /* margin: 30px 0px 0px 0px; */
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.s-card {
+  margin: 30px 0px;
+  border: 3px solid #281c14;
+  background-color: #ffdcba;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.s-card > h3 {
+  margin: 15px 0px 5px 0px;
+}
+.s-card > button {
+  text-decoration: none;
+  font-family: "Rancho", cursive;
+  float: right;
+  font-size: 24px;
+  color: #ffe2d3;
+  border: 3px solid #281c14;
+  border-radius: 4px;
+  background-color: #281c14;
+  padding: 5px 22px;
+  transition: all 0.3s ease;
+}
+.s-card > button:hover {
+  color: #281c14;
+  background-color: #ffdcba;
+}
+
+.s-card > img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 13px 4px rgba(0, 0, 0, 0.63);
+}
+
+/* Footer */
+footer{
+  background-color: #0f0909;
+}
+#footer {
+  width: 100%;
+  padding: 70px var(--b-margin);
+  background-color: #0f0909;
+  color: #ffe2d3;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.left {
+  width: 45%;
+}
+.left > p {
+  margin: 10px 0px;
+}
+.socials {
+  margin-left: -10px;
+}
+.icon {
+  width: 50px;
+  height: 45px;
+  margin: 0px 5px;
+}
+.right {
+  /* float: right; */
+  width: 45%;
+}
+/* .left, .right, .copyright{
+  border: 2px solid green;
+} */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.phone {
+  margin: 10px 0px 0px 0px;
+}
+.info {
+  position: absolute;
+}
+.detail {
+  font-family: "Rancho", cursive;
+}
+.copyright {
+  background-color: #0f0909;
+  color: #ffe2d3;
+  text-align: center;
+  padding-bottom: 10px;
+}
